@@ -12,5 +12,5 @@ type Connpass struct {
 }
 
 func main() {
-  fmt.Printf("Hello")
+  fmt.Printf("Hello [1]")
 }
