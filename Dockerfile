@@ -1,19 +1,15 @@
 FROM golang:1.9
 
-#WORKDIR /go/src/ci-sample
+WORKDIR /go/src/ci-sample
 
-#COPY /* ./
+COPY /* ./
 
-#WORKDIR /go/src
-WORKDIR /
+WORKDIR /go/src
 
-#RUN go vet ci-sample
-RUN go vet ./workspace/main.go
+RUN go vet ci-sample
 
-#RUN go get -u github.com/golang/lint/golint \
-#        && golint -set_exit_status ./ci-sample/...
 RUN go get -u github.com/golang/lint/golint \
-        && golint -set_exit_status ./workspace/...
+        && golint -set_exit_status ./ci-sample/...
 
 
 # RUN go tool vet controllers
