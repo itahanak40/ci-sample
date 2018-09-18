@@ -8,7 +8,7 @@ FROM golang:1.9
 WORKDIR /
 
 #RUN go vet ci-sample
-RUN go vet workspace
+RUN go vet ./workspace/main.go
 
 #RUN go get -u github.com/golang/lint/golint \
 #        && golint -set_exit_status ./ci-sample/...
