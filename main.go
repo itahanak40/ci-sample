@@ -1,7 +1,9 @@
-package ci_sample
+#package ci_sample
+package ci-sample
 
 import "fmt"
 
+// Connpass is ...
 type Connpass struct {
   //ResultsReturned  int `json:results_returned`
   //ResultsAvailable int `json:results_available`
