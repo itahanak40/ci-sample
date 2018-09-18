@@ -14,7 +14,7 @@ RUN go get -u github.com/golang/lint/golint \
         && golint -set_exit_status ./ci-sample/...
 
 
-# RUN go tool vet controllers
+## RUN go tool vet controllers
 # RUN go tool vet functions
 # RUN go tool vet models
 # RUN go tool vet pubsub
