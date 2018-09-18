@@ -7,3 +7,16 @@ COPY /* ./
 WORKDIR /go/src
 
 RUN go vet ci-sample
+
+RUN go get -u github.com/golang/lint/golint \
+        && golitn ./...
+
+
+# RUN go tool vet controllers
+# RUN go tool vet functions
+# RUN go tool vet models
+# RUN go tool vet pubsub
+# RUN go tool vet scripts
+# RUN go tool vet services
+# RUN go tool vet tasks
+# RUN go tool vet utils
