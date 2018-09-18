@@ -9,7 +9,7 @@ WORKDIR /go/src
 RUN go vet ci-sample
 
 RUN go get -u github.com/golang/lint/golint \
-        && golitn ./...
+        && golint ./...
 
 
 # RUN go tool vet controllers
