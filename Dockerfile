@@ -6,6 +6,8 @@ COPY /* ./
 
 WORKDIR /go/src
 
+RUN ls /workspace
+
 RUN go vet ci-sample
 
 RUN go get -u github.com/golang/lint/golint \
