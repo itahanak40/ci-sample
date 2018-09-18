@@ -6,7 +6,7 @@ COPY /* ./
 
 WORKDIR /go/src
 
-RUN ls /workspace
+RUN ls /
 
 RUN go vet ci-sample
 
