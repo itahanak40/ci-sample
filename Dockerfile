@@ -4,6 +4,8 @@ ARG PJ_DIR_NAME=cisample
 
 WORKDIR /go/src/$PJ_DIR_NAME
 
+RUN echo $PJ_DIR_NAME
+
 COPY /* ./
 
 WORKDIR /go/src
