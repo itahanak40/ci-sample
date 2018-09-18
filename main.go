@@ -1,5 +1,4 @@
-#package ci_sample
-package ci-sample
+package cisample
 
 import "fmt"
 
